@@ -1,7 +1,8 @@
-
+from keras.models import Model
 from keras.layers import Input
 from keras.layers import Dense
 from keras.layers.recurrent import LSTM
+
 
 visible = Input(shape=(100,1))
 hidden1 = LSTM(10)(visible)
